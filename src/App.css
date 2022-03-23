@@ -1,0 +1,17 @@
+header{
+text-align: center;
+    margin: 40px;
+    font-size: 40px;
+}
+footer{
+    text-align: center;
+    margin: 40px;
+}
+
+
+.App{
+    margin: 40px;
+}
+.AppContainer{
+    border: 1px solid grey;
+}
