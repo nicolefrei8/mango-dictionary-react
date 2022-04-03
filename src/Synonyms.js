@@ -1,14 +1,17 @@
+import "./Synonyms.css";
+
 export default function Synonyms(props) {
+  console.log(props.synonyms);
   if (props.synonyms) {
     return (
-      <div>
-        <strong>Synonyms:</strong>
+      <section>
+        <h4> Synonyms</h4>
         <ul className="Synonyms">
           {props.synonyms.map(function (synonym, index) {
             return <li key={index}>{synonym}</li>;
           })}
         </ul>
-      </div>
+      </section>
     );
   } else {
     return null;
