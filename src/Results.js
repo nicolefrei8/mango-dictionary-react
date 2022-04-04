@@ -5,7 +5,6 @@ import Synonyms from "./Synonyms";
 import Phonetic from "./Phonetic";
 
 export default function Results(props) {
-  console.log(props);
   if (props.results) {
     return (
       <div className="Results">

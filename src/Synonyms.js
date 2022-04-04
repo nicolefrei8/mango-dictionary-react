@@ -1,8 +1,7 @@
 import "./Synonyms.css";
 
 export default function Synonyms(props) {
-  console.log(props.synonyms);
-  if (props.synonyms) {
+  if (props.synonyms[0]) {
     return (
       <section>
         <h4> Synonyms</h4>

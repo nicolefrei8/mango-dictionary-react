@@ -1,7 +1,7 @@
 header {
   text-align: center;
   margin: 40px;
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Comfortaa", cursive;
 }
 footer {
@@ -10,5 +10,9 @@ footer {
 }
 
 .App {
-  margin: 40px;
+  margin: 30px;
+}
+.container1 {
+  max-width: 960px;
+  margin: 0 auto;
 }
