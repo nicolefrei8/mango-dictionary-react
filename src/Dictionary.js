@@ -20,9 +20,11 @@ export default function Dictionary() {
     event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(dictionaryResponse);
-
+    let pexelsApiKey =
+      "563492ad6f91700001000001b1983c7ed15944558605d2b0d3cba0a9";
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
-    axios.get(pexelsApiUrl).then(pexelsResponse);
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    axios.get(pexelsApiUrl, { headers: headers }).then(pexelsResponse);
   }
   function keywordChange(event) {
     setKeyword(event.target.value);
